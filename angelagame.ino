@@ -132,7 +132,7 @@ void setArrivo()
       return;
     }
     
-  lcd.setCursor(4, 2);
+      lcd.setCursor(4, 2);
       lcd.print(v);
       lcd.setCursor(13, 2);
       lcd.print(tot);
@@ -160,6 +160,7 @@ void setArrivo()
        lcd.print(giocatore);
        delay(1000);
        Valore(v2,giocatore);
+       lcd.clear();
     }
     }
     void Verifica(int v,int giocatore)
@@ -173,6 +174,7 @@ void setArrivo()
         lcd.print("il giocatore ");
         lcd.print(giocatore);
         delay(2000);
+      
         }
         if(tot+v>arrivo)
         {
@@ -183,7 +185,9 @@ void setArrivo()
         lcd.print("il giocatore ");
         lcd.print(giocatore);
         delay(2000);
+        
           }
+         
       }
       
 void loop() {
